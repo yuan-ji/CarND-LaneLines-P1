@@ -37,11 +37,6 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 4. According to endpoints from step 3. The two lines for the lane can be drawn onto the initial image. 
    
 
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1] [image1]: ./examples/grayscale.jpg "Graysca
-
-
 ### 2. Identify potential shortcomings with your current pipeline
 
 Using average strategy is easy but not robust. The end effect depends on lane itself and the setting of ROI.
@@ -51,7 +46,6 @@ Now the lane is determined by the average position and average slope of lines. I
 
 
 If ROI is set not correctly, more and more noise will be introduced. Then the lane detection will be more inaccurate.
-
 
 
 ### 3. Suggest possible improvements to your pipeline
