@@ -31,7 +31,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
     - slope < 0.0, the line is part of the right segments, store the two points (x1,y1) (x2,y2) into right set
 2. Calculate the average position and average slope of each set. Then each line of the lane is determined.
 3. Computing the endpoint on the top and bottom for left and right lines.
-    - According the formula (y_ref-y_tar)/(x_ref-x_tar) = slope, (x_ref,y_ref) is the result shown above.
+    - According the formula (y_ref-y_tar)/(x_ref-x_tar) = slope, (x_ref,y_ref) is the result in step 2.
     - The target y_tar is determined by ROI and the size of the image shape.
     - Finally, the two-point (p_min as well as p_max) for each line are calculated.
 4. According to endpoints from step 3. The two lines for the lane can be drawn onto the initial image. 
